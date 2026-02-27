@@ -97,8 +97,6 @@ prettier.config.js    //Prettier code formatting configuration
 
 ### Folder Structure Preview
 
-![Folder Structure](./docs/images/folder-structure.png)
-
 ```
 
 ---
