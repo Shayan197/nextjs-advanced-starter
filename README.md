@@ -1,6 +1,6 @@
 # Next.js Enterprise Boilerplate
 
-Modern, scalable and production-ready **Next.js 16 boilerplate** built with:
+A modern, scalable, and production-ready **Next.js 16 starter template** designed for rapid development with enterprise-grade architecture and best practices- Built with:
 
 - TypeScript
 - Tailwind CSS v4 (Design Token Architecture)
