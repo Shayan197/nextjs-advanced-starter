@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Dependencies copy karo
 COPY package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci
 
 # Source copy karo
 COPY . .

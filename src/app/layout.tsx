@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: 'Next.js Boilerplate',
     images: [
       {
-        url: '',
+        url: './og-image.png',
         width: 1200,
         height: 630,
         alt: 'Next.js Boilerplate',
