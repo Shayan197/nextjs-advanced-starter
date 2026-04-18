@@ -5,15 +5,15 @@ Design Tokens (Base / Default Theme)
 ========================================= */
 
 :root {
-    /* Brand Colors */
-    --color-primary-dark: #de5e91;
-    --color-primary-light: #de5e70;
+  /* Brand Colors */
+  --color-primary-dark: #de5e91;
+  --color-primary-light: #de5e70;
 
-    /* Surface & Text Colors */
-    --color-background: #000000;
-    --color-foreground-primary: #ffffff;
-    --color-foreground-secondary: #aaaaaa;
-    --color-surface-footer: #070708;
+  /* Surface & Text Colors */
+  --color-background: #ffffff;
+  --color-foreground-primary: #333333;
+  --color-foreground-secondary: #757575;
+  --color-surface-footer: #fafafa;
 }
 
 /* =========================================
@@ -21,11 +21,11 @@ Dark Theme Override
 ========================================= */
 
 [data-theme='dark'] {
-    --color-primary-dark: #de5e91;
-    --color-background: #000000;
-    --color-foreground-primary: #ffffffe6;
-    --color-foreground-secondary: #ffffff66;
-    --color-surface-footer: #070708;
+  --color-primary-dark: #de5e91;
+  --color-background: #000000;
+  --color-foreground-primary: #ffffffe6;
+  --color-foreground-secondary: #ffffff66;
+  --color-surface-footer: #070708;
 }
 
 /* =========================================
@@ -33,11 +33,11 @@ Light Theme Override
 ========================================= */
 
 [data-theme='light'] {
-    --color-primary-light: #de5e70;
-    --color-background: #ffffff;
-    --color-foreground-primary: #333333;
-    --color-foreground-secondary: #757575;
-    --color-surface-footer: #fafafa;
+  --color-primary-light: #de5e70;
+  --color-background: #ffffff;
+  --color-foreground-primary: #333333;
+  --color-foreground-secondary: #757575;
+  --color-surface-footer: #fafafa;
 }
 
 /* =========================================
@@ -45,32 +45,32 @@ Tailwind Token Mapping
 ========================================= */
 
 @theme inline {
-    --color-primary-dark: var(--color-primary-dark);
-    --color-primary-light: var(--color-primary-light);
-    --color-background: var(--color-background);
-    --color-foreground-primary: var(--color-foreground-primary);
-    --color-foreground-secondary: var(--color-foreground-secondary);
-    --color-surface-footer: var(--color-surface-footer);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-primary-light: var(--color-primary-light);
+  --color-background: var(--color-background);
+  --color-foreground-primary: var(--color-foreground-primary);
+  --color-foreground-secondary: var(--color-foreground-secondary);
+  --color-surface-footer: var(--color-surface-footer);
 
-    /* Typography Scale */
-    --text-heading-xl: 36px;
-    --text-heading-lg: 32px;
-    --text-heading-md: 28px;
-    --text-heading-sm: 24px;
+  /* Typography Scale */
+  --text-heading-xl: 36px;
+  --text-heading-lg: 32px;
+  --text-heading-md: 28px;
+  --text-heading-sm: 24px;
 
-    --text-body-lg: 18px;
-    --text-body-md: 16px;
-    --text-body-sm: 14px;
+  --text-body-lg: 18px;
+  --text-body-md: 16px;
+  --text-body-sm: 14px;
 
-    --text-caption-lg: 13px;
-    --text-caption-md: 12px;
-    --text-caption-sm: 11px;
+  --text-caption-lg: 13px;
+  --text-caption-md: 12px;
+  --text-caption-sm: 11px;
 
-    /* Font Families */
-    --font-sans: var(--font-geist-sans), sans-serif;
-    --font-mono: var(--font-geist-mono), monospace;
-    --font-poppins: var(--font-poppins), sans-serif;
-    --font-figtree: var(--font-figtree), sans-serif;
+  /* Font Families */
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-figtree: var(--font-figtree), sans-serif;
 }
 
 /* =========================================
@@ -78,6 +78,6 @@ Base Styles
 ========================================= */
 
 body {
-    font-family: var(--font-figtree);
-    background-color: var(--color-background);
+  font-family: var(--font-figtree);
+  background-color: var(--color-background);
 }

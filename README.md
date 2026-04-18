@@ -1,6 +1,11 @@
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-Enabled-blue)
+![Docker](https://img.shields.io/badge/Docker-Ready-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 # Next.js Enterprise Boilerplate
 
-A modern, scalable, and production-ready **Next.js 16 starter template** designed for rapid development with enterprise-grade architecture and best practices- Built with:
+A modern, scalable, and production-ready **Next.js 16 starter template** designed for rapid development with enterprise-grade architecture and best practices. Built with:
 
 - TypeScript
 - Tailwind CSS v4 (Design Token Architecture)
@@ -31,9 +36,7 @@ A modern, scalable, and production-ready **Next.js 16 starter template** designe
 
 ## Introduction
 
-This boilerplate is designed for scalable frontend applications using modern architecture and enterprise-level best practices.
-
-It includes:
+This boilerplate is designed for scalable frontend applications using modern architecture and enterprise-level best practices. Build with:
 
 - Design Token based Tailwind system
 - Dark / Light theme support
@@ -47,25 +50,61 @@ It includes:
 
 ## Getting Started
 
-### 1️⃣ Install Dependencies
+You can run this project in two ways depending on your workflow:
+
+---
+
+### Option 1: Docker (Production-ready Environment)
+
+Run the entire app using Docker (no need to install Node.js or dependencies manually):
+
+```bash
+git clone <repo-url>
+cd <project-folder>
+docker-compose up --build
+```
+
+App will be available at:
+http://localhost:3000
+
+---
+
+### Option 2: Local Development (Fast & Flexible)
+
+Use this for active development and debugging:
+
+#### 1️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2️⃣ Run Dev Server
+#### 2️⃣ Run Dev Server
 
 ```bash
 npm run dev
 ```
 
 App will run at:
-
-```
 http://localhost:3000
-```
 
 ---
+
+## CRLF Error Fix (Important)
+
+If you face **CRLF / LF warnings**, run:
+
+```bash
+npm run lint -- --fix
+```
+
+Then configure Git:
+
+```bash
+git config --global core.autocrlf input
+```
+
+(Recommended for cross-platform consistency)
 
 ## Project Structure
 
@@ -94,8 +133,6 @@ commitlint.config.js  //Conventional commit rules configuration
 css.d.ts              //Global CSS module type declarations
 eslint.config.mjs     //ESLint configuration (strict enterprise rules)
 prettier.config.js    //Prettier code formatting configuration
-
-### Folder Structure Preview
 
 ```
 
@@ -196,7 +233,7 @@ Docker/Dockerfile
 
 ## Linting & Code Quality
 
-Run lint:
+Run lint manually:
 
 ```bash
 npm run lint
@@ -235,7 +272,7 @@ Includes:
 
 ## Environment Variables
 
-Copy:
+Create a local environment file `.env` and copy:
 
 ```
 .env.example
@@ -247,7 +284,13 @@ to:
 .env
 ```
 
-Add your environment-specific configs.
+Or run this command in your terminal:
+
+```
+cp .env.example .env
+```
+
+Then update values based on your environment.
 
 ---
 
@@ -262,13 +305,27 @@ Add your environment-specific configs.
 
 ---
 
+## Support
+
+If this project helped you or you learned something new:
+
+**If you like this project, feel free to star the repository!**
+
+---
+
 ## Author
 
-Muhammad Shayan Bukhari  
-Frontend Developer
+**Muhammad Shayan Bukhari**
+Frontend Developer — React | Next.js | TypeScript
 
 ---
 
 ## License
 
 MIT
+
+---
+
+## © Copyright
+
+© 2026 — All Rights Reserved by Shayan Bukhari

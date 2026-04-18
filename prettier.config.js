@@ -2,7 +2,7 @@
 module.exports = {
     semi: true, // ✅ Always add semicolons
     singleQuote: true, // ✅ Preferred in JS/TS community for consistency
-    tabWidth: 4, // ✅ Matches your Expo rule: indent: ["error", 4]
+    tabWidth: 2, // ✅ Matches your Expo rule: indent: ["error", 2]
     trailingComma: 'all', // ✅ Improves diff readability; safer in multi-line edits
     bracketSpacing: true, // ✅ Keeps spacing inside object literals: { a: 1 }
     printWidth: 100, // ✅ Recommended for readability without breaking layout
