@@ -78,6 +78,5 @@ Base Styles
 ========================================= */
 
 body {
-  font-family: var(--font-figtree);
   background-color: var(--color-background);
 }

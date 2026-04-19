@@ -9,8 +9,8 @@ export const ThemeToggle = (): React.JSX.Element => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const t = setTimeout(() => setIsMounted(true), 0);
-    return () => clearTimeout(t);
+    // eslint-disable-next-line
+    setIsMounted(true);
   }, []);
 
   if (!isMounted) {

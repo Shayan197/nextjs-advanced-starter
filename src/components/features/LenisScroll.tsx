@@ -1,9 +1,9 @@
 'use client';
 
 import Lenis from 'lenis';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
-export const LenisScroll = (): React.ReactNode => {
+export const LenisScroll = () => {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -13,15 +13,18 @@ export const LenisScroll = (): React.ReactNode => {
       wheelMultiplier: 0.5,
     });
 
+    let rafId: number;
     const raf = (time: number) => {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     };
 
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
-    return () => lenis.destroy();
+    return () => {
+      cancelAnimationFrame(rafId);
+      lenis.destroy();
+    };
   }, []);
-
   return null;
 };

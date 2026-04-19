@@ -36,7 +36,7 @@ A modern, scalable, and production-ready **Next.js 16 starter template** designe
 
 ## Introduction
 
-This boilerplate is designed for scalable frontend applications using modern architecture and enterprise-level best practices. Build with:
+This boilerplate is designed for scalable frontend applications using modern architecture and enterprise-level best practices. It includes:
 
 - Design Token based Tailwind system
 - Dark / Light theme support
@@ -131,6 +131,7 @@ src/                  //Main application source code
 
 commitlint.config.js  //Conventional commit rules configuration
 css.d.ts              //Global CSS module type declarations
+.env.example          //set environment variables
 eslint.config.mjs     //ESLint configuration (strict enterprise rules)
 prettier.config.js    //Prettier code formatting configuration
 

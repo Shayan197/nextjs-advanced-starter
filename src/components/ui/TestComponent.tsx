@@ -17,7 +17,7 @@ export const TestComponent = (): React.JSX.Element => {
         <p className="text-foreground-primary text-heading-sm">Count : {count}</p>
         <button
           onClick={() => dispatch(increment())}
-          className="text-foreground-primary bg-foreground-secondary rounded-xl px-10 py-2 ml-4"
+          className="text-foreground-primary bg-primary-dark rounded-xl px-10 py-2 ml-4"
         >
           Increment
         </button>
